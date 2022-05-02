@@ -52,7 +52,7 @@ testData =
   ]
 -- 1. Return a list of the names of all the weather stations.
 displayStationName :: Station -> String
-displayStationName (name, _, _) = "\nName: " ++ name ++ "\n"
+displayStationName (name, _, _) = "\nName: " ++ name ++ " \n"
 
 displayStationsName :: [Station] -> String
 displayStationsName station = concatMap displayStationName station
