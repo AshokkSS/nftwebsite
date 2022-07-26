@@ -32,9 +32,10 @@ img{
 
   body {
     width: 1920px;
-    margin: 0 auto;
+    margin: 0 ;
     background-color: black;
-    padding: 0 20px 20px 20px;
+    padding: 0 ;
+    overflow-x: hidden; 
   }
 
   * {
@@ -42,10 +43,13 @@ img{
     padding: 0;
     box-sizing: border-box;
    }
-
+.top-bar {
+    width: 100%;
+  }
   /* NAVBAR STYLING STARTS */
 .navbar {
- position: relative; 
+  position: relative;
+ width: 100%;
  z-index: 100;
  display: flex;
  align-items: center;
@@ -107,7 +111,8 @@ img{
  position: absolute; /*WITH RESPECT TO PARENT*/
  display: none;
  border-radius: 8px;
- top: 40px;
+ top: 45px;
+ right: -5px;
 }
 .dropdown li + li {
  margin-top: 10px;

@@ -28,28 +28,40 @@
   </head>
   <body>
     <a id="top"></a>
-    <nav class="navbar">
-      <!-- LOGO -->
-      <div id="logo">NFTGuide.com</div>
-      <!-- NAVIGATION MENU -->
-      <ul class="nav-links">
-        <!-- NAVIGATION MENUS -->
-        <div class="menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="sol.html">Solana</a></li>
-          <li><a href="eth.html">Ethereum</a></li>
-          <li class="services">
-            <a href="/">Official Links</a>
-            <!-- DROPDOWN MENU -->
-            <ul class="dropdown">
-              <li><a href="https://binance.com" target="_blank">Buy crypto</a></li>
-              <li><a href="https://opensea.io/" target="_blank">ETH NFT Marketplace</a></li>
-              <li><a href="https://www.magiceden.io/" target="_blank" >SOL NFT Marketplace</a></li>
-            </ul>
-          </li>
-        </div>
-      </ul>
-    </nav>
+    <div class="top-bar">
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div id="logo">NFTGuide.com</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="sol.html">Solana</a></li>
+            <li><a href="eth.html">Ethereum</a></li>
+            <li class="services">
+              <a href="/">Official Links</a>
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li>
+                  <a href="https://binance.com" target="_blank">Buy crypto</a>
+                </li>
+                <li>
+                  <a href="https://opensea.io/" target="_blank"
+                    >ETH NFT Marketplace</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.magiceden.io/" target="_blank"
+                    >SOL NFT Marketplace</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
     <nav class="mininavbar">
       <div class="minimenu"></div>
       <p>Your one stop guide to get started with NFTs!</p>
@@ -68,8 +80,6 @@
             image.src = images[random];
           }, 1000);
         </script>
-
-        <br />
         <br />
         <br />
         <br />
@@ -140,8 +150,10 @@
         <section>
           <p class="information">
             After that quick introduction if you think you are ready to take on
-            the challenging world of NFT's click <a href="#top">here</a> to return
-            to the top of the page where you can learn more! The official links section contains links to some essential sites for all NFT users!
+            the challenging world of NFT's click <a href="#top">here</a> to
+            return to the top of the page where you can learn more! The official
+            links section contains links to some essential sites for all NFT
+            users!
           </p>
           <button href="#logo" id="myBtn" title="Go to top">Top</button>
         </section>
