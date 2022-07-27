@@ -1,10 +1,10 @@
 html {
-    font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
+  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
   font-family: "Fjalla One", serif; /* this should be the rest of the output you got from Google fonts */
   background-color: #000000;
   scroll-behavior: smooth;
 }
-img{
+img {
   display: block;
   width: 1400px;
   height: 800px;
@@ -14,119 +14,117 @@ img{
   left: 250px;
   top: 2px;
 }
-  h1 {
-    font-size: 60px;
-    text-align: center;
-    margin: 0;
+h1 {
+  display: none;
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
   padding: 20px 0;
-  color: #00539F;
+  color: #00539f;
   text-shadow: 3px 3px 1px black;
-  }
-  
-  p, li {
-    font-size: 18px;
-    text-align: center;
-    line-height: 2;
-    letter-spacing: 1px;
-  }
+}
 
-  body {
-    width: 1920px;
-    margin: 0 ;
-    background-color: black;
-    padding: 0 ;
-    overflow-x: hidden; 
-  }
+p,
+li {
+  font-size: 18px;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 1px;
+}
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   }
+body {
+  margin: 0;
+  background-color: black;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .top-bar {
-    width: 100%;
-  }
-  /* NAVBAR STYLING STARTS */
+  width: 100%;
+}
+/* NAVBAR STYLING STARTS */
 .navbar {
   position: relative;
- width: 100%;
- z-index: 100;
- display: flex;
- align-items: center;
- justify-content: space-between;
- padding: 20px;
- font-family: "Fjalla One", serif;
- background-color: white;
- color: black;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: "Fjalla One", serif;
+  background-color: white;
+  color: black;
 }
 
-.mininavbar{
- position: relative; 
- z-index: 99;
- display: flex;
- align-items: center;
- justify-content: space-between;
- padding: 10px;
- font-family: "Fjalla One", serif;
- background-color: grey;
- color: black;
-
+.mininavbar {
+  justify-content: center;
+  position: relative;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-family: "Fjalla One", serif;
+  background-color: grey;
+  color: black;
 }
 .nav-links a {
- color: black;
+  color: black;
 }
 /* LOGO */
 #logo {
- font-size: 32px;
+  font-size: 32px;
 }
 /* NAVBAR MENU */
 .menu {
- display: flex;
- gap: 1em;
- font-size: 18px;
-}
-
-.minimenu {
   display: flex;
   gap: 1em;
   font-size: 18px;
-  color: black;
- }
+}
+
+.minimenu {
+  text-align: center;
+}
 
 .menu li:hover {
- background-color:	#C0C0C0;
- border-radius: 5px;
- transition: 0.3s ease;
+  background-color: #c0c0c0;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 .menu li {
- padding: 5px 14px;
+  padding: 5px 14px;
 }
 /* DROPDOWN MENU */
 .services {
- position: relative; 
+  position: relative;
 }
 .dropdown {
- background-color: 	white;
- padding: 1em 0;
- position: absolute; /*WITH RESPECT TO PARENT*/
- display: none;
- border-radius: 8px;
- top: 45px;
- right: -5px;
+  background-color: white;
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 45px;
+  right: -5px;
 }
 .dropdown li + li {
- margin-top: 10px;
+  margin-top: 10px;
 }
 .dropdown li {
- padding: 0.5em 1em;
- width: 8em;
- text-align: center;
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
 }
 .dropdown li:hover {
- background-color: #C0C0C0;
+  background-color: #c0c0c0;
 }
 .services:hover .dropdown {
- display: block;
+  display: block;
 }
 
 .info {
@@ -145,7 +143,6 @@ nav ul {
 
 article {
   background-color: black;
-  
 }
 
 /* Clear floats after the columns */
@@ -154,8 +151,6 @@ section::after {
   display: table;
   clear: both;
 }
-
-
 
 .container {
   width: 95%;
@@ -183,7 +178,7 @@ section::after {
   text-align: center;
   height: calc(10vw + 20px);
   transition: all 0.2s ease-in;
-  color:white
+  color: white;
 }
 
 .episode__content {
@@ -192,11 +187,11 @@ section::after {
   grid-template-columns: 1fr 4fr;
   grid-gap: 10px;
   padding: 15px 0;
-  color:white
+  color: white;
 }
 
 .episode__content .title {
-  font-weight: 800
+  font-weight: 800;
 }
 
 .episode__content .story {
@@ -215,7 +210,7 @@ section::after {
   }
 }
 
-.infotitle{
+.infotitle {
   font-size: 60px;
   text-align: center;
   margin: 0;
@@ -224,7 +219,7 @@ section::after {
   text-shadow: 3px 3px 1px grey;
 }
 
-.information{
+.information {
   font-size: 20px;
   text-align: center;
   margin: 0;
@@ -232,22 +227,26 @@ section::after {
   color: white;
 }
 
-#myBtn {
-  display: none;
-  position: fixed ;
-  bottom: 0px;
-  right: 300px;
-  z-index: 100;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
 }
 
-#myBtn:hover {
-  background-color: #555;
+.progress-bar-sol {
+  height: 8px;
+  background: #a94aff;
+  width: 0%;
+}
+.progress-bar-home {
+  height: 8px;
+  background: gray;
+  width: 0%;
+}
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
 }

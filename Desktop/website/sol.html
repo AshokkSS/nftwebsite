@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" />
-        <link href="styles/styles.css" rel="stylesheet" />
-        <title>Document</title>
-        <style>
-          body {
-              animation: fadeInAnimation ease 3s;
-              animation-iteration-count: 1;
-              animation-fill-mode: forwards;
-          }
-          @keyframes fadeInAnimation {
-              0% {
-                  opacity: 0;
-              }
-              100% {
-                  opacity: 1;
-              }
-          }
-      </style>
-      </head>
-<body>
-    <nav class="navbar">
+<html lang="en-GB">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Fjalla+One"
+      rel="stylesheet"
+    />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+      body {
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a id="top"></a>
+    <div class="top-bar">
+      <nav class="navbar">
         <!-- LOGO -->
         <div id="logo">NFTGuide.com</div>
         <!-- NAVIGATION MENU -->
@@ -38,19 +45,42 @@
               <a href="/">Official Links</a>
               <!-- DROPDOWN MENU -->
               <ul class="dropdown">
-                <li><a href="https://binance.com" target="_blank">Buy crypto</a></li>
-                <li><a href="https://opensea.io/" target="_blank">ETH NFT Marketplace</a></li>
-                <li><a href="https://www.magiceden.io/" target="_blank" >SOL NFT Marketplace</a></li>
+                <li>
+                  <a href="https://binance.com" target="_blank">Buy crypto</a>
+                </li>
+                <li>
+                  <a href="https://opensea.io/" target="_blank"
+                    >ETH NFT Marketplace</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.magiceden.io/" target="_blank"
+                    >SOL NFT Marketplace</a
+                  >
+                </li>
               </ul>
             </li>
           </div>
         </ul>
       </nav>
-      <nav class="mininavbar">
-        <div class="minimenu"></div>
-        <p>Your one stop guide to get started with NFTs!</p>
-        <p></p>
-      </nav>
+    </div>
+    <script src="js/exchange-rates2.js"></script>
+    <script>
+      // onload
+      window.addEventListener("load", getExchangeRates);
+    </script>
+    <nav class="mininavbar">
+      <p id="gbp"></p>
+      <p>|</p>
+      <p id="usd"></p>
+    </nav>
+    <div class="header">
+        <h2>SOL NFT Guide</h2>
+        <div class="progress-container">
+          <div class="progress-bar-sol" id="myBar"></div>
+        </div>  
+      </div>
+    <script src="js/scroll.js"></script>
       <h1 class ="infotitle">SOL NFT Guide</h1>
       <img src="https://techcrunch.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-11-at-11.18.15-AM.png" id="image">
       <section>

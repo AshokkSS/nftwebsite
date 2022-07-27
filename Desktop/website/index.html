@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Fjalla+One"
       rel="stylesheet"
@@ -63,23 +65,20 @@
       </nav>
     </div>
     <nav class="mininavbar">
-      <div class="minimenu"></div>
       <p>Your one stop guide to get started with NFTs!</p>
-      <p></p>
     </nav>
-
+    <div class="header">
+      <h2>Home Page</h2>
+      <div class="progress-container">
+        <div class="progress-bar-home" id="myBar"></div>
+      </div>
+    </div>
+    <script src="js/scroll.js"></script>
     <main>
       <p class="infotitle">Are you ready to begin your NFT journey?</p>
       <p>
         <img src="" id="image" />
-        <script type="text/javascript">
-          let image = document.getElementById("image");
-          let images = ["img1.jpeg", "img2.jpeg", "img3.jpeg", "img4.jpeg"];
-          setInterval(function () {
-            let random = Math.floor(Math.random() * 4);
-            image.src = images[random];
-          }, 1000);
-        </script>
+        <script type="text/javascript" src="js/image.js"></script>
         <br />
         <br />
         <br />
@@ -155,7 +154,6 @@
             links section contains links to some essential sites for all NFT
             users!
           </p>
-          <button href="#logo" id="myBtn" title="Go to top">Top</button>
         </section>
       </div>
     </main>
