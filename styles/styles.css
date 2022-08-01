@@ -69,13 +69,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-.top-bar {
-  width: 100%;
-}
+
 /* NAVBAR STYLING STARTS */
 .navbar {
   position: relative;
-  width: 100%;
   z-index: 100;
   display: flex;
   align-items: center;
