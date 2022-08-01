@@ -176,13 +176,7 @@ section::after {
   clear: both;
 }
 
-.container {
-  position: sticky;
-  width: 95%;
-  max-width: 1400px;
-  margin: 0 auto;
-  color:#202020;
-}
+
 .containerwide {
   width: 95%;
   max-width: 1600px;
@@ -312,14 +306,21 @@ section::after {
 }
 
 .largecontainer {
-  position: sticky relative;
-  width:95%;
-  left: 260px;
+  position: sticky ;
+  width: 95%;
+  
   width: 1400px;
   text-align: left;
   margin: 0 auto;
 }
 
+.container {
+  position: sticky;
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+  color:#202020;
+}
 
 .textinfo{
   color: white;
