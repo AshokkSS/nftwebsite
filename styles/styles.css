@@ -234,20 +234,33 @@ section::after {
 .menu{
   display: none;
 }
+.mininavbar{
+  padding: 2px;
+  
+}
+p{
+  font-size: 14px;
+}
+
+
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  z-index: 100;
+  background-color: white;
   position: relative;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
+  z-index: 100;
   display: none;
+  
 }
 
 /* Style navigation menu links */
 .topnav a {
-  color: white;
+  z-index: 100;
+  color: black;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -256,11 +269,12 @@ section::after {
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  background: black;
+  background: white;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 100;
 }
 
 /* Add a grey background color on mouse-over */
@@ -271,8 +285,9 @@ section::after {
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #04AA6D;
+  background-color: white;
   color: white;
+  z-index: 100;
 }
 }
 @media (min-width: 600px){
@@ -301,7 +316,6 @@ section::after {
   font-size: 60px;
   text-align: center;
   margin: 0;
-  padding: 20px;
   color: white;
 }
 
@@ -343,9 +357,9 @@ section::after {
 
 .header {
   position: fixed;
-  top: 0;
-  z-index: 1;
+  z-index: 99;
   width: 100%;
+  margin: 0 auto;
   background-color: #f1f1f1;
 }
 

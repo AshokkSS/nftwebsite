@@ -1,97 +1,102 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Fjalla+One"
-      rel="stylesheet"
-    />
-    <link href="styles/styles.css" rel="stylesheet" />
-    <title>Ethereum NFT Guide</title>
-    <style>
-      body {
-        animation: fadeInAnimation ease 3s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" />
+  <link href="styles/styles.css" rel="stylesheet" />
+  <title>Ethereum NFT Guide</title>
+  <style>
+    body {
+      animation: fadeInAnimation ease 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
       }
-      @keyframes fadeInAnimation {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
+
+      100% {
+        opacity: 1;
       }
-    </style>
-  </head>
-  <link rel="shortcut icon" href="images/eth.ico">
-  <body>
-    <a id="top"></a>
-    <div class="top-bar">
-      <nav class="navbar">
-        <!-- LOGO -->
-        <div id="logo">NFTGuide.com</div>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-          <!-- NAVIGATION MENUS -->
-          <div class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sol.html">Solana</a></li>
-            <li><a href="eth.html">Ethereum</a></li>
-            <li class="services">
-              <a href="official-links.html">Official Links</a>
-              <!-- DROPDOWN MENU -->
-              <ul class="dropdown">
-                <li>
-                  <a href="https://binance.com" target="_blank">Buy crypto</a>
-                </li>
-                <li>
-                  <a href="https://opensea.io/" target="_blank"
-                    >ETH NFT Marketplace</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.magiceden.io/" target="_blank"
-                    >SOL NFT Marketplace</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </div>
-        </ul>
-      </nav>
+    }
+  </style>
+</head>
+<link rel="shortcut icon" href="images/eth.ico">
+
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a href="#home" class="active">NFTGuide.com</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="index.html">Home</a>
+      <a href="sol.html">Solana</a>
+      <a href="eth.html">Ethereum</a>
+      <a href="official-links.html">Official Links</a>
     </div>
-    <script type="text/javascript" src="js/exchange-rates.js"></script>
-    <script>
-      // onload
-      window.addEventListener("load", getExchangeRates);
-    </script>
-    <nav class="mininavbar">
-      <p id="gbp"></p>
-      <p>|</p>
-      <p id="usd"></p>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script src=js/mobile.js></script>
+  <a id="top"></a>
+  <div class="top-bar">
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div id="logo">NFTGuide.com</div>
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sol.html">Solana</a></li>
+          <li><a href="eth.html">Ethereum</a></li>
+          <li class="services">
+            <a href="official-links.html">Official Links</a>
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li>
+                <a href="https://binance.com" target="_blank">Buy crypto</a>
+              </li>
+              <li>
+                <a href="https://opensea.io/" target="_blank">ETH NFT Marketplace</a>
+              </li>
+              <li>
+                <a href="https://www.magiceden.io/" target="_blank">SOL NFT Marketplace</a>
+              </li>
+            </ul>
+          </li>
+        </div>
+      </ul>
     </nav>
-    <div class="header">
-      <h2 class="progress-bar-text">ETH NFT Guide</h2>
-      <div class="progress-container">
-        <div class="progress-bar-eth" id="myBar"></div>
-      </div>  
-    </div>
-  <script src="js/scroll.js"></script>
+  </div>
+  <script type="text/javascript" src="js/exchange-rates.js"></script>
+  <script>
+    // onload
+    window.addEventListener("load", getExchangeRates);
+  </script>
+  <nav class="mininavbar">
+    <p id="gbp"></p>
+    <p>|</p>
+    <p id="usd"></p>
+  </nav>
   <main>
     <p class="infotitle">Ethereum NFT Guide</p>
     <p>
-      <img
-        src="https://cdn.coingape.com/wp-content/uploads/2022/06/11092352/ethereum-merge.webp"
-        id="image"
-      />
+      <img src="https://cdn.coingape.com/wp-content/uploads/2022/06/11092352/ethereum-merge.webp" id="image" />
       <br />
     </p>
-    <div class="largecontainer">
+    <div class="container">
       <h2>How to get started with ETH NFT's</h2>
       <br />
       <h3>A 10 minute read covering everything you need to know!</h3>
@@ -151,6 +156,7 @@
       </p>
     </div>
   </main>
- 
-  </body>
+
+</body>
+
 </html>
