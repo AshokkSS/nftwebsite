@@ -6,7 +6,7 @@ function getExchangeRates(event, baseCurrency = "SOL") {
 
   // call the api
   fetch(
-    `http://api.coinbase.com/v2/exchange-rates?currency=${baseCurrency}`,
+    `https://api.coinbase.com/v2/exchange-rates?currency=${baseCurrency}`,
     requestOptions
   )
     .then((response) => response.json())
