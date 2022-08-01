@@ -1,173 +1,171 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-  <head>
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Fjalla+One"
-      rel="stylesheet"
-    />
-    <link href="styles/styles.css" rel="stylesheet" />
-    <title>NFTGuide.com</title>
-    <style>
-      body {
-        animation: fadeInAnimation ease 3s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" />
+  <link href="styles/styles.css" rel="stylesheet" />
+  <title>NFTGuide.com</title>
+  <style>
+    body {
+      animation: fadeInAnimation ease 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
       }
-      @keyframes fadeInAnimation {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    </style>
-  </head>
-  <link rel="shortcut icon" href="images/home.ico">
-  <body>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-        <a href="#home" class="active">NFTGuide.com</a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-            <a href="index.html">Home</a>
-            <a href="sol.html">Solana</a>
-            <a href="eth.html">Ethereum</a>
-            <a href="official-links.html">Official Links</a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<link rel="shortcut icon" href="images/home.ico">
+
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <a id="top"></a>
+  <div class="topnav">
+    <a href="#home" class="active">NFTGuide.com</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="index.html">Home</a>
+      <a href="sol.html">Solana</a>
+      <a href="eth.html">Ethereum</a>
+      <a href="official-links.html">Official Links</a>
     </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
     <script src=js/mobile.js></script>
-    <a id="top"></a>
-      <nav class="navbar">
-        <!-- LOGO -->
-        <div id="logo">NFTGuide.com</div>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-          <!-- NAVIGATION MENUS -->
-          <div class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sol.html">Solana</a></li>
-            <li><a href="eth.html">Ethereum</a></li>
-            <li class="services">
-              <a href="test.html">Official Links</a>
-              <!-- DROPDOWN MENU -->
-              <ul class="dropdown">
-                <li>
-                  <a href="https://binance.com" target="_blank">Buy crypto</a>
-                </li>
-                <li>
-                  <a href="https://opensea.io/" target="_blank"
-                    >ETH NFT Marketplace</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.magiceden.io/" target="_blank"
-                    >SOL NFT Marketplace</a
-                  >
-                </li>
-              </ul>
+  </div>
+  
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div id="logo">NFTGuide.com</div>
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sol.html">Solana</a></li>
+        <li><a href="eth.html">Ethereum</a></li>
+        <li class="services">
+          <a href="test.html">Official Links</a>
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li>
+              <a href="https://binance.com" target="_blank">Buy crypto</a>
             </li>
-          </div>
-        </ul>
-      </nav>
+            <li>
+              <a href="https://opensea.io/" target="_blank">ETH NFT Marketplace</a>
+            </li>
+            <li>
+              <a href="https://www.magiceden.io/" target="_blank">SOL NFT Marketplace</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </ul>
+  </nav>
+  </div>
+  <nav class="mininavbar">
+    <p>Your one stop guide to get started with NFTs!</p>
+  </nav>
+  <main>
+    <h1>Are you ready to begin your NFT journey?</h1>
+    <p>
+    <div class="container">
+      <img src="" id="image" />
+      <script type="text/javascript" src="js/image.js"></script>
+      <br />
+      <br />
     </div>
-    <nav class="mininavbar">
-      <p>Your one stop guide to get started with NFTs!</p>
-    </nav>
-    <main>
-      <p class="infotitle">Are you ready to begin your NFT journey?</p>
-      <p>
-        <div class = "container">
-        <img src="" id="image" />
-        <script type="text/javascript" src="js/image.js"></script>
-        <br />
-        <br />
-      </div>
-      </p>
+    </p>
 
-      <div class="container">
-        <section>
-          <article class="episode">
-            <div class="episode__number">NFT</div>
-            <div class="episode__content">
-              <div class="title">Non-fungible token</div>
-              <div class="story">
-                <p>What is a NFT?</p>
-                <p>
-                  NFT's what are they? How can you get involved? Is it a scam?
-                </p>
-                <p>
-                  The official definition of an NFT is "Non-fungible tokens
-                  (NFTs) are cryptographic assets on a blockchain with unique
-                  identification codes and metadata that distinguish them from
-                  each other." It may seem confusing at first but after going
-                  through this website you will be an NFT Pro!
-                </p>
-              </div>
+    <div class="container">
+      <section>
+        <article class="episode">
+          <div class="episode__number">NFT</div>
+          <div class="episode__content">
+            <div class="title">Non-fungible token</div>
+            <div class="story">
+              <p>What is a NFT?</p>
+              <p>
+                NFT's what are they? How can you get involved? Is it a scam?
+              </p>
+              <p>
+                The official definition of an NFT is "Non-fungible tokens
+                (NFTs) are cryptographic assets on a blockchain with unique
+                identification codes and metadata that distinguish them from
+                each other." It may seem confusing at first but after going
+                through this website you will be an NFT Pro!
+              </p>
             </div>
-          </article>
-        </section>
-        <section>
-          <article class="episode">
-            <div class="episode__number">ETH</div>
-            <div class="episode__content">
-              <div class="title">Ethereum</div>
-              <div class="story">
-                <p>What is Ethereum?</p>
-                <p>
-                  Ethereum is the second largest Cryptocurrency and is home to
-                  the biggest NFT collections with some being worth millions!
-                </p>
-                <p>
-                  But don't worry you won't need millions to get started you can
-                  start off with as little as £100!
-                </p>
-              </div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <article class="episode">
+          <div class="episode__number">ETH</div>
+          <div class="episode__content">
+            <div class="title">Ethereum</div>
+            <div class="story">
+              <p>What is Ethereum?</p>
+              <p>
+                Ethereum is the second largest Cryptocurrency and is home to
+                the biggest NFT collections with some being worth millions!
+              </p>
+              <p>
+                But don't worry you won't need millions to get started you can
+                start off with as little as £100!
+              </p>
             </div>
-          </article>
-          <article class="episode">
-            <div class="episode__number">SOL</div>
-            <div class="episode__content">
-              <div class="title">Solana</div>
-              <div class="story">
-                <p>What is Solana?</p>
-                <p>
-                  Solana is currently the 9th largest Cryptocurrency and is also
-                  very popular with NFTs (but not as large as Ethereum).
-                </p>
-                <p>
-                  Due to solana not being as expensive as Ethereum this allows
-                  more people to get involved in NFT's without having to put a
-                  large sum of money in to get started. At the moment 1 Solana
-                  is worth £36.08 and 1 Ethereum is worth £1300!
-                </p>
-              </div>
+          </div>
+        </article>
+        <article class="episode">
+          <div class="episode__number">SOL</div>
+          <div class="episode__content">
+            <div class="title">Solana</div>
+            <div class="story">
+              <p>What is Solana?</p>
+              <p>
+                Solana is currently the 9th largest Cryptocurrency and is also
+                very popular with NFTs (but not as large as Ethereum).
+              </p>
+              <p>
+                Due to solana not being as expensive as Ethereum this allows
+                more people to get involved in NFT's without having to put a
+                large sum of money in to get started. At the moment 1 Solana
+                is worth £36.08 and 1 Ethereum is worth £1300!
+              </p>
             </div>
-          </article>
-        </section>
-      </div>
-      <div class="containerwide">
-        <section>
-          <p class="information">
-            After that quick introduction if you think you are ready to take on
-            the challenging world of NFT's click <a href="#top">here</a> to
-            return to the top of the page where you can learn more! The official
-            links section contains links to some essential sites for all NFT
-            users!
-          </p>
-        </section>
-      </div>
-    </main>
-  </body>
+          </div>
+        </article>
+      </section>
+    </div>
+    <div class="containerwide">
+      <section>
+        <p style="text-align:center;" class="textinfo">
+          After that quick introduction if you think you are ready to take on
+          the challenging world of NFT's click <a href="#top">here</a> to
+          return to the top of the page where you can learn more! The official
+          links section contains links to some essential sites for all NFT
+          users!
+        </p>
+      </section>
+    </div>
+  </main>
+</body>
+
 </html>

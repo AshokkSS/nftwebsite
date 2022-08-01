@@ -28,12 +28,11 @@ img {
   top: 2px;
 }
 h1 {
-  display: none;
-  font-size: 60px;
+  font-size: 40px;
   text-align: center;
   margin: 0;
   padding: 20px 0;
-  color: #00539f;
+  color: white;
   text-shadow: 3px 3px 1px black;
 }
 
@@ -241,6 +240,19 @@ section::after {
 p{
   font-size: 14px;
 }
+
+img {
+  display: block;
+  max-width: 95%;
+  width: 600px;
+  height: 250px;
+  margin: 0 auto;
+  transition: 0.5;
+  position: sticky absolute;
+  left: 250px;
+  top: 2px;
+}
+
 
 
 .topnav {
