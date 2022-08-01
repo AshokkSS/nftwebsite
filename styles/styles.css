@@ -96,6 +96,7 @@ body {
   color: black;
 }
 .nav-links a {
+  width: 100%;
   color: black;
 }
 /* LOGO */
