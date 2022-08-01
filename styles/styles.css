@@ -8,6 +8,7 @@ html {
 }
 img {
   display: block;
+  max-width: 100%;
   width: 1400px;
   height: 800px;
   margin: 0 auto;
