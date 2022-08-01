@@ -20,12 +20,17 @@ function getExchangeRates(event, baseCurrency = "SOL") {
 function renderCards(rates, baseCurrency) {
   // Get the usd card
   var num = rates["USD"];
+  var usdformatted = parseFloat(num).toFixed(2);
+  var num2 = rates["GBP"];
+  var gbpformatted = parseFloat(num2).toFixed(2);
+  console.log(usdformatted)
+  console.log(gbpformatted)
   document.getElementById(
     "usd"
-  ).innerHTML = `1 ${baseCurrency} \t=\t &#36 ${rates["USD"]}`;
+  ).innerHTML = `1 ${baseCurrency} \t=\t &#36 ${usdformatted}`;
 
   // Get the inr card
   document.getElementById(
     "gbp"
-  ).innerHTML = `1 ${baseCurrency} \t=\t &#163 ${rates["GBP"]}`;
+  ).innerHTML = `1 ${baseCurrency} \t=\t &#163 ${gbpformatted}`;
 }
