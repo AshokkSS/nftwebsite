@@ -272,6 +272,13 @@ section::after {
   background: gray;
   width: 0%;
 }
+
+.progress-bar-official {
+  height: 8px;
+  background: rgb(251, 255, 0);
+  width: 0%;
+}
+
 .header {
   position: fixed;
   top: 0;
