@@ -1,7 +1,7 @@
 html {
   font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
   font-family: "Fjalla One", serif; /* this should be the rest of the output you got from Google fonts */
-  background-color: #202020;
+  
   scroll-behavior: smooth;
   width: 100vw;
   height: 100vh;
@@ -27,6 +27,9 @@ img {
   left: 250px;
   top: 2px;
 }
+
+/* headers */
+
 h1 {
   font-size: 40px;
   text-align: center;
@@ -70,7 +73,7 @@ body {
   box-sizing: border-box;
 }
 
-/* NAVBAR STYLING STARTS */
+/* Navbar styling */
 .navbar {
   position: relative;
   z-index: 100;
@@ -83,23 +86,14 @@ body {
   color: black;
 }
 
-.mininavbar {
-  justify-content: center;
-  position: relative;
-  z-index: 99;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  font-family: "Fjalla One", serif;
-  background-color: grey;
-  color: black;
-}
+
 .nav-links a {
   width: 100%;
   color: black;
 }
 /* LOGO */
-#logo {
+.logo {
+  color:black;
   font-size: 32px;
 }
 /* NAVBAR MENU */
@@ -163,17 +157,20 @@ nav ul {
   padding: 0;
 }
 
-article {
-  background-color:#202020;
+/* mini nav bar styling */
+.mininavbar {
+  justify-content: center;
+  position: relative;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-family: "Fjalla One", serif;
+  background-color: grey;
+  color: black;
 }
 
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+/* home page info styling*/
 
 .containerwide {
   width: 95%;
@@ -185,7 +182,6 @@ section::after {
   display: grid;
   grid-template-columns: 1fr 3fr;
   position: relative;
-  color:#202020;
 }
 
 .episode__number {
@@ -221,6 +217,13 @@ section::after {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 576px) {
+  .episode__content .story {
+    font-size: 15px;
+  }
+}
+/* mobile formatting*/
 
 @media (max-width: 600px) {
     /* Style the navigation menu */
@@ -311,11 +314,8 @@ img {
   }
 }
 
-@media (max-width: 576px) {
-  .episode__content .story {
-    font-size: 15px;
-  }
-}
+/* text box styling*/
+
 
 .subtitle {
   font-size: 30px;
@@ -338,6 +338,161 @@ img {
   padding: 20px 0;
   color: white;
 }
+
+.footercontainer{
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background-color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.smallcontainer {
+  position: sticky  ;
+  left: 260px;
+  width: 1000px;
+  text-align: left;
+  margin: 0  ;
+  border: 3px solid #666;
+}
+
+.largecontainer {
+  position: sticky ;
+  width: 95%;
+  
+  width: 1400px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.container {
+  position: sticky;
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.textinfo{
+  color: white;
+  font-size:16px;
+  text-align: left;
+}
+
+/* light mode toggle */
+.dark-mode {
+  background-color: #D3D3D3;
+  color: black;
+  
+}
+.dark-mode-navbar{
+  background-color:#A9A9A9;
+}
+
+.dark-mode-mininavbar{
+  background-color:#C0C0C0;
+}
+
+.logo-light {
+  color:	#D3D3D3;
+  font-size: 32px;
+}
+
+.nav-links-light a{
+  width: 100%;
+  color: 	#D3D3D3;
+}
+
+.textinfo-light{
+  color: black;
+  font-size:16px;
+  text-align: left;
+}
+
+.episode__number-light {
+  color: black;
+}
+
+
+/* toggle */
+.switch {
+  position: relative;
+  display: inline-block;
+  left: -390px;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #202020;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #D3D3D3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* progress bar styling CURRENTLY REMOVED */
 
 .progress-container {
   width: 100%;
@@ -378,45 +533,4 @@ img {
 .progress-bar-text{
   color:black;
   font-size: 20px;
-}
-
-.footercontainer{
-  position: relative;
-  width: 100%;
-  height: 20px;
-  background-color: white;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.smallcontainer {
-  position: sticky  ;
-  left: 260px;
-  width: 1000px;
-  text-align: left;
-  margin: 0  ;
-  border: 3px solid #666;
-}
-
-.largecontainer {
-  position: sticky ;
-  width: 95%;
-  
-  width: 1400px;
-  text-align: left;
-  margin: 0 auto;
-}
-
-.container {
-  position: sticky;
-  width: 95%;
-  max-width: 1400px;
-  margin: 0 auto;
-  color:#202020;
-}
-
-.textinfo{
-  color: white;
-  font-size:16px;
-  text-align: left;
 }
