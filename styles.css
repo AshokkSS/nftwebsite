@@ -304,7 +304,7 @@ img {
   position: sticky;
   display: inline-block;
   bottom: 8px;
-  width: 30px;
+  width: 17px;
   height: 17px;
 }
 
@@ -375,7 +375,7 @@ input:checked + .slider:before {
   position: relative;
   display: inline-block;
   top: 5px;
-  width: 60px;
+  width: 34px;
   height: 34px;
 }
 
