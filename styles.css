@@ -292,10 +292,7 @@ img {
 }
 
 /* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+
 
 /* Style the active link (or home/logo) */
 .active {
@@ -304,7 +301,7 @@ img {
   z-index: 100;
 }
 .switch {
-  position: relative;
+  position: sticky;
   display: inline-block;
   bottom: 8px;
   width: 30px;
