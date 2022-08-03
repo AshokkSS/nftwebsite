@@ -40,7 +40,7 @@ html {
   
   h2{
     color:white;
-    font-size: 40px;
+    font-size:30px  
   }
   
   h3{
@@ -52,11 +52,23 @@ html {
   p,
   li {
     font-size: 18px;
-    text-align: center;
+    text-align: left;
     line-height: 2;
     letter-spacing: 1px;
   }
+  ul.a {
+    list-style-type: circle;
+    text-align: left;
+    font-size: 18px;
+    padding: 5px;
+    margin-left: 15px;
+    color:white
+  }
   
+  figcaption{
+    text-align: center;
+    font-weight: bold;
+  }
   body {
     margin: 0;
     background-color: #D3D3D3;
