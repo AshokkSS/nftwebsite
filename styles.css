@@ -370,7 +370,7 @@ input:checked + .slider:before {
   }
   /* toggle */
 .switch {
-  position: relative;
+  position: sticky;
   display: inline-block;
   top: 5px;
   width: 34px;
