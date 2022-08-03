@@ -6,9 +6,26 @@
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
+  <link id="theme" type="text/css" href="styles.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" />
-  <link href="styles/styles.css" rel="stylesheet" />
+
+  <script>
+
+    function toggleTheme() {
+    var theme = document.getElementById('theme');
+      if (theme.getAttribute('href') == 'styles.css') {
+
+        theme.setAttribute('href', 'light.css');
+
+      } else {
+
+        theme.setAttribute('href', 'styles.css');
+
+      }
+
+    }
+
+  </script>
   <title>NFTGuide.com</title>
   <style>
     body {
@@ -36,16 +53,17 @@
   <a id="top"></a>
   <div class="topnav">
     <a href="#home" class="active">NFTGuide.com</a>
-    <label class="switch">
-      <input onclick="myFunction2()" type="checkbox">
-      <span class="slider round"></span>
-    </label>
+    
     <!-- Navigation links (hidden by default) -->
     <div id="myLinks">
       <a href="index.html">Home</a>
       <a href="sol.html">Solana</a>
       <a href="eth.html">Ethereum</a>
       <a href="official-links.html">Official Links</a>
+      <a><label class="switch">
+      <input onclick="toggleTheme()" type="checkbox">
+      <span class="slider round"></span>
+    </label></a>
     </div>
     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -176,7 +194,7 @@
     </div>
 
 
-    
+
   </main>
 </body>
 

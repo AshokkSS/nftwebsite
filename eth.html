@@ -8,7 +8,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" />
-  <link href="styles/styles.css" rel="stylesheet" />
+  <link id="theme" type="text/css" href="styles.css" rel="stylesheet" />
+    <script>
+
+      function toggleTheme() {
+      var theme = document.getElementById('theme');
+        if (theme.getAttribute('href') == 'styles.css') {
+  
+          theme.setAttribute('href', 'light.css');
+  
+        } else {
+  
+          theme.setAttribute('href', 'styles.css');
+  
+        }
+  
+      }
+  
+    </script>
   <title>Ethereum NFT Guide</title>
   <style>
     body {

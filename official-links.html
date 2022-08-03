@@ -8,7 +8,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" />
-    <link href="styles/styles.css" rel="stylesheet" />
+    <link id="theme" type="text/css" href="styles.css" rel="stylesheet" />
+    <script>
+    function toggleTheme() {
+            var theme = document.getElementById('theme');
+            if (theme.getAttribute('href') == 'styles.css') {
+
+                theme.setAttribute('href', 'light.css');
+                localStorage.setItem('lightMode', 'enabled');
+
+            }
+            else {
+
+                theme.setAttribute('href', 'styles.css');
+                localStorage.setItem('lightMode', 'disabled');
+
+            }
+
+        }
+        ;
+    </script>
     <title>Official links</title>
     <style>
         body {
@@ -60,8 +79,8 @@
                 <label class="switch">
                     <input onclick="myFunction2()" type="checkbox">
                     <span class="slider round"></span>
-                  </label>
-                  <script type="text/javascript" src="js/light-mode.js"></script>
+                </label>
+                <script type="text/javascript" src="js/light-mode.js"></script>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sol.html">Solana</a></li>
                 <li><a href="eth.html">Ethereum</a></li>
@@ -90,7 +109,8 @@
         <br>
         <div class="container">
             <h1>Where to buy crpyto?</h1>
-            <h3 style="text-align:center"><a href="https://binance.com" target="_blank"> The largest Crypto exchange</a></h3>
+            <h3 style="text-align:center"><a href="https://binance.com" target="_blank"> The largest Crypto exchange</a>
+            </h3>
             <br />
             <img src="https://public.bnbstatic.com/image/cms/blog/20210923/4d355307-c090-47d9-aeaa-88bcdb17751e.png" />
             <br>
@@ -102,7 +122,8 @@
             <br />
             <br />
             <h1>ETH NFT Marketplace</h1>
-            <h3 style="text-align:center"><a href="https://opensea.io/" target="_blank"> The largest Ethereum NFT Marketplace</a></h3>
+            <h3 style="text-align:center"><a href="https://opensea.io/" target="_blank"> The largest Ethereum NFT
+                    Marketplace</a></h3>
             <br />
             <img src="https://assets.website-files.com/5f73bbd13fa8b95aedaf300b/616300d6caa878e1c348351f_Header.png" />
             <br>
@@ -114,7 +135,8 @@
             <br />
             <br />
             <h1>SOL NFT Marketplace</h1>
-            <h3 style="text-align:center"><a href="https://www.magiceden.io/" target="_blank"> The largest Solana NFT Marketplace</a></h3>
+            <h3 style="text-align:center"><a href="https://www.magiceden.io/" target="_blank"> The largest Solana NFT
+                    Marketplace</a></h3>
             <br />
             <img src="https://btcpeers.com/content/images/2022/04/Cryptonary_Magic-Eden-1.png" />
             <br>
