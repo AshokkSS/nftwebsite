@@ -350,9 +350,6 @@ html {
   
   input:checked + .slider:before {
     background-color:black;
-    -webkit-transform: translateX(13px);
-    -ms-transform: translateX(13px);
-    transform: translateX(13px);
   }
   
   /* Rounded sliders */
@@ -421,9 +418,6 @@ html {
   
   input:checked + .slider:before {
     background-color:black;
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
   }
   
   /* Rounded sliders */

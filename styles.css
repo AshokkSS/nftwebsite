@@ -349,9 +349,6 @@ input:focus + .slider {
 
 input:checked + .slider:before {
   background-color: #D3D3D3;
-  -webkit-transform: translateX(13px);
-  -ms-transform: translateX(13px);
-  transform: translateX(13px);
 }
 
 /* Rounded sliders */
@@ -420,9 +417,6 @@ input:focus + .slider {
 
 input:checked + .slider:before {
   background-color: #D3D3D3;
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
 }
 
 /* Rounded sliders */
