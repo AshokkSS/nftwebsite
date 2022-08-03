@@ -1,198 +1,170 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-  <head>
-    <meta
-      name="viewport"
-      content="width=device-width, height=device-height, initial-scale=1.0"
-    />
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Fjalla+One"
-      rel="stylesheet"
-    />
-    <link id="theme" type="text/css" href="styles.css" rel="stylesheet" />
-    <script>
-      const toggleSwitch = document.querySelector(
-          '.switch input[type="checkbox"]'
-      );
-      console.log(localStorage.getItem('lightMode'));
-      if(localStorage.getItem('lightMode') == 'enabled'){
-          theme.setAttribute('href', 'light.css');
-          toggleSwitch.checked = true;
-      }
-  
-      function toggleTheme() {
-          var theme = document.getElementById('theme');
-          if (theme.getAttribute('href') == 'styles.css') {
-  
-              theme.setAttribute('href', 'light.css');
-              localStorage.setItem('lightMode', 'enabled');
-              console.log(localStorage.getItem('lightMode'));
-  
-          }
-          else {
-  
-              theme.setAttribute('href', 'styles.css');
-              localStorage.setItem('lightMode', 'disabled');
-              console.log(localStorage.getItem('lightMode'));
-  
-          }
-  
-      }
-      ;
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" />
+  <link id="theme" type="text/css" href="styles.css" rel="stylesheet" />
+  <script src="js/light-mode.js">
   </script>
-    <title>Solana NFT Guide</title>
-    <style>
-      body {
-        animation: fadeInAnimation ease 3s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-      }
-      @keyframes fadeInAnimation {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    </style>
-  </head>
-  <link rel="shortcut icon" href="images/sol.ico">
-  <body>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <a id="top"></a>
-    <div class="topnav">
-        <a href="index.html" class="active">NFTGuide.com</a>
+  <title>Solana NFT Guide</title>
+  <style>
+    body {
+      animation: fadeInAnimation ease 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
 
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-            <a href="index.html">Home</a>
-            <a href="sol.html">Solana</a>
-            <a href="eth.html">Ethereum</a>
-            <a href="official-links.html">Official Links</a>
-            <a><label class="switch">
-                <input onclick="toggleTheme()" for="checkbox">
-                <span class="slider round"></span>
-            </label></a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <script src=js/mobile.js></script>
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<link rel="shortcut icon" href="images/sol.ico">
+
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <a id="top"></a>
+  <div class="topnav">
+    <a href="index.html" class="active">NFTGuide.com</a>
+    <div id="myLinks">
+      <a href="index.html">Home</a>
+      <a href="sol.html">Solana</a>
+      <a href="eth.html">Ethereum</a>
+      <a href="official-links.html">Official Links</a>
+      <a><label class="switch">
+          <input onclick="toggleTheme()" for="checkbox">
+          <span class="slider round"></span>
+        </label></a>
     </div>
-    
-    <nav class="navbar">
-        <!-- LOGO -->
-        <div class="logo">NFTGuide.com</div>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-            <!-- NAVIGATION MENUS -->
-            <div class="menu">
-                <label class="switch">
-                    <input onclick="toggleTheme()" for="checkbox">
-                    <span class="slider round"></span>
-                </label>
-                <script type="text/javascript" src="js/light-mode.js"></script>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sol.html">Solana</a></li>
-                <li><a href="eth.html">Ethereum</a></li>
-                <li class="services">
-                    <a href="official-links.html">Official Links</a>
-                    <!-- DROPDOWN MENU -->
-                    <ul class="dropdown">
-                        <li>
-                            <a href="https://binance.com" target="_blank">Buy crypto</a>
-                        </li>
-                        <li>
-                            <a href="https://opensea.io/" target="_blank">ETH NFT Marketplace</a>
-                        </li>
-                        <li>
-                            <a href="https://www.magiceden.io/" target="_blank">SOL NFT Marketplace</a>
-                        </li>
-                    </ul>
-                </li>
-            </div>
-        </ul>
-    </nav>
-    <nav class="mininavbar">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <script src=js/mobile.js></script>
+  </div>
+  <nav class="navbar">
+    <div class="logo">NFTGuide.com</div>
+    <ul class="nav-links">
+      <div class="menu">
+        <label class="switch">
+          <input onclick="toggleTheme()" for="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <script type="text/javascript" src="js/light-mode.js"></script>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sol.html">Solana</a></li>
+        <li><a href="eth.html">Ethereum</a></li>
+        <li class="services">
+          <a href="official-links.html">Official Links</a>
+          <ul class="dropdown">
+            <li>
+              <a href="https://binance.com" target="_blank">Buy crypto</a>
+            </li>
+            <li>
+              <a href="https://opensea.io/" target="_blank">ETH NFT Marketplace</a>
+            </li>
+            <li>
+              <a href="https://www.magiceden.io/" target="_blank">SOL NFT Marketplace</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </ul>
+  </nav>
+  <nav class="mininavbar">
     <script type="text/javascript" src="js/exchange-rates2.js"></script>
     <script>
       window.addEventListener("load", getExchangeRates);
     </script>
-      <p id="gbp"></p>
-      <p>|</p>
-      <p id="usd"></p>
-    </nav>
-    <main>
-      <br>    
-      <h1>Solana NFT Guide</h1>
-      <br/>
-      <img src="https://techcrunch.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-11-at-11.18.15-AM.png" id="image"/>
-      <br>
-      <div class="container">
-        <h2 style= "font-size:30px">How to get started with SOL NFT's</h2>
-        <br />
-        <h3>A 10 minute read covering everything you need to know!</h3>
-        <br />
-        <p class="textinfo">
-          Before you can dive into the world of NFT's you need to have a rough
-          understanding of what Cryptocurrency is, after all it's the currency
-          that you will be using. If this is your first time learning about
-          crypto don't worry this guide will break it down as simple as
-          possible, but if you already understand how crypto works click here to
-          skip this section and get right into NFT's.
-        </p>
-        <br />
-        <img src="images/blockchain.png"/>
-        <br />
-        <h2 style= "font-size:30px">Understanding Crypto</h2>
-        <br />
-        <p class="textinfo">
-          At its core, cryptocurrency is typically decentralized digital money
-          designed to be used over the internet. Bitcoin, which launched in
-          2008, was the first cryptocurrency, and it remains by far the biggest,
-          most influential, and best-known. In the decade since, Bitcoin and
-          other cryptocurrencies like Ethereum have grown as digital
-          alternatives to money issued by governments. Crypto makes it possible
-          to transfer value online without the need for a middleman like a bank
-          or payment processor, allowing value to transfer globally,
-          near-instantly, 24/7, for low fees. Cryptocurrencies are usually not
-          issued or controlled by any government or other central authority.
-          They’re managed by peer-to-peer networks of computers running free,
-          open-source software. Generally, anyone who wants to participate is
-          able to. If a bank or government isn’t involved, how is crypto secure?
-          It’s secure because all transactions are vetted by a technology called
-          a blockchain. A cryptocurrency blockchain is similar to a bank’s
-          balance sheet or ledger. Each currency has its own blockchain, which
-          is an ongoing, constantly re-verified record of every single
-          transaction ever made using that currency. Unlike a bank’s ledger, a
-          crypto blockchain is distributed across participants of the digital
-          currency’s entire network No company, country, or third party is in
-          control of it; and anyone can participate. A blockchain is a
-          breakthrough technology only recently made possible through decades of
-          computer science and mathematical innovations.
-        </p>
-        <br />
-        <h2 style= "font-size:30px">How does Crypto work with NFT's?</h2>
-        <p class="textinfo">
-          As many NFT's can be considered as art, I will use it as an example to
-          explain. When expensive art works are purchased in real life they will
-          be paid for in cash, this may be in Pounds, Dollars, Euros any
-          currency. In the world of NFT's it is the same concept you are
-          purchasing an NFT but instead of paying with regular money you are
-          paying using Crypto (ETH or SOL). Also because any transaction made
-          using crypto will be on the blockchain for that crypto currency all
-          the transactions are visible and can be tracked. So if you own an NFT
-          the blockchain proves you are the owner, this adds more security to
-          your NFT's as no one will be able to steal your NFT (even if they
-          screenshot it they won't own it!)
-        </p>
-      </div>
-    </main>
-  </body>
+    <p id="gbp"></p>
+    <p>|</p>
+    <p id="usd"></p>
+  </nav>
+  <main>
+    <br>
+    <h1>Solana NFT Guide</h1>
+    <br />
+    <img src="https://techcrunch.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-11-at-11.18.15-AM.png" id="image" />
+    <br>
+    <div class="container">
+      <h2 style="font-size:30px">How to get started with SOL NFT's</h2>
+      <br />
+      <h3>A 10 minute read covering everything you need to know!</h3>
+      <br />
+      <p class="textinfo">
+        Before you can dive into the world of NFT's you need to have a rough
+        understanding of what Cryptocurrency is, after all it's the currency
+        that you will be using. If this is your first time learning about
+        crypto don't worry this guide will break it down as simple as
+        possible, but if you already understand how crypto works click here to
+        skip this section and get right into NFT's.
+      </p>
+      <br />
+      <img src="images/blockchain.png" />
+      <br />
+      <h2 style="font-size:30px">Understanding Crypto</h2>
+      <br />
+      <p class="textinfo">
+        At its core, cryptocurrency is typically decentralized digital money
+        designed to be used over the internet. Bitcoin, which launched in
+        2008, was the first cryptocurrency, and it remains by far the biggest,
+        most influential, and best-known. In the decade since, Bitcoin and
+        other cryptocurrencies like Ethereum have grown as digital
+        alternatives to money issued by governments. Crypto makes it possible
+        to transfer value online without the need for a middleman like a bank
+        or payment processor, allowing value to transfer globally,
+        near-instantly, 24/7, for low fees. Cryptocurrencies are usually not
+        issued or controlled by any government or other central authority.
+        They’re managed by peer-to-peer networks of computers running free,
+        open-source software. Generally, anyone who wants to participate is
+        able to. If a bank or government isn’t involved, how is crypto secure?
+        It’s secure because all transactions are vetted by a technology called
+        a blockchain. A cryptocurrency blockchain is similar to a bank’s
+        balance sheet or ledger. Each currency has its own blockchain, which
+        is an ongoing, constantly re-verified record of every single
+        transaction ever made using that currency. Unlike a bank’s ledger, a
+        crypto blockchain is distributed across participants of the digital
+        currency’s entire network No company, country, or third party is in
+        control of it; and anyone can participate. A blockchain is a
+        breakthrough technology only recently made possible through decades of
+        computer science and mathematical innovations.
+      </p>
+      <br />
+      <h2 style="font-size:30px">How does Crypto work with NFT's?</h2>
+      <p class="textinfo">
+        As many NFT's can be considered as art, I will use it as an example to
+        explain. When expensive art works are purchased in real life they will
+        be paid for in cash, this may be in Pounds, Dollars, Euros any
+        currency. In the world of NFT's it is the same concept you are
+        purchasing an NFT but instead of paying with regular money you are
+        paying using Crypto (ETH or SOL). Also because any transaction made
+        using crypto will be on the blockchain for that crypto currency all
+        the transactions are visible and can be tracked. So if you own an NFT
+        the blockchain proves you are the owner, this adds more security to
+        your NFT's as no one will be able to steal your NFT (even if they
+        screenshot it they won't own it!)
+      </p>
+    </div>
+  </main>
+
+</body>
+<footer>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="sol.html">Solana</a></li>
+    <li><a href="eth.html">Ethereum</a></li>
+    <li><a href="official-links.html">Official Links</a></li>
+  </ul>
+</footer>
+
 </html>

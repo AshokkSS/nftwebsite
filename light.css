@@ -360,6 +360,11 @@ html {
   .slider.round:before {
     border-radius: 50%;
   }
+  footer li a{
+    text-decoration: none;
+    color: #D3D3D3;
+    font-size: 9px;
+  }
   }
   @media (min-width: 600px){
     .topnav{
@@ -404,12 +409,14 @@ html {
     left: 4px;
     bottom: 4px;
     background-color: #D3D3D3;
+    box-shadow: 0 0 5px black;
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
     background-color: #D3D3D3;
+    box-shadow: 0 0 5px black;
   }
   
   input:focus + .slider {
@@ -490,7 +497,33 @@ html {
   }
   
   .textinfo{
-    color: black;
+    color: white;
     font-size:16px;
     text-align: left;
+  }
+
+  footer{
+    background: #A9A9A9;
+    margin: 0 auto;
+    height: 40px;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  footer ul{
+  margin: 0px;
+  padding:0;
+  }
+  footer li {
+  /*  float: left;  */
+    list-style-type: none;
+    line-height: 9px;
+    height: 11px;
+    padding: 0px 10px;
+    display:inline;
+  }
+  footer li a{
+    text-decoration: none;
+    color: #D3D3D3;
+    font-size: 18px;
   }

@@ -9,36 +9,8 @@
 
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" />
   <link id="theme" type="text/css" href="styles.css" rel="stylesheet" />
-  <script>
-    const toggleSwitch = document.querySelector(
-        '.switch input[type="checkbox"]'
-    );
-    console.log(localStorage.getItem('lightMode'));
-    if(localStorage.getItem('lightMode') == 'enabled'){
-        theme.setAttribute('href', 'light.css');
-        toggleSwitch.checked = true;
-    }
-
-    function toggleTheme() {
-        var theme = document.getElementById('theme');
-        if (theme.getAttribute('href') == 'styles.css') {
-
-            theme.setAttribute('href', 'light.css');
-            localStorage.setItem('lightMode', 'enabled');
-            console.log(localStorage.getItem('lightMode'));
-
-        }
-        else {
-
-            theme.setAttribute('href', 'styles.css');
-            localStorage.setItem('lightMode', 'disabled');
-            console.log(localStorage.getItem('lightMode'));
-
-        }
-
-    }
-    ;
-</script>
+  <script src ="js/light-mode.js">
+  </script>
   <title>Ethereum NFT Guide</title>
   <style>
     body {
@@ -65,60 +37,52 @@
 
   <!-- Top Navigation Menu -->
   <a id="top"></a>
-    <div class="topnav">
-        <a href="index.html" class="active">NFTGuide.com</a>
-
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-            <a href="index.html">Home</a>
-            <a href="sol.html">Solana</a>
-            <a href="eth.html">Ethereum</a>
-            <a href="official-links.html">Official Links</a>
-            <a><label class="switch">
-                <input onclick="toggleTheme()" for="checkbox">
-                <span class="slider round"></span>
-            </label></a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <script src=js/mobile.js></script>
+  <div class="topnav">
+    <a href="index.html" class="active">NFTGuide.com</a>
+    <div id="myLinks">
+      <a href="index.html">Home</a>
+      <a href="sol.html">Solana</a>
+      <a href="eth.html">Ethereum</a>
+      <a href="official-links.html">Official Links</a>
+      <a><label class="switch">
+          <input onclick="toggleTheme()" for="checkbox">
+          <span class="slider round"></span>
+        </label></a>
     </div>
-    
-    <nav class="navbar">
-        <!-- LOGO -->
-        <div class="logo">NFTGuide.com</div>
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
-            <!-- NAVIGATION MENUS -->
-            <div class="menu">
-                <label class="switch">
-                    <input onclick="toggleTheme()" for="checkbox">
-                    <span class="slider round"></span>
-                </label>
-                <script type="text/javascript" src="js/light-mode.js"></script>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sol.html">Solana</a></li>
-                <li><a href="eth.html">Ethereum</a></li>
-                <li class="services">
-                    <a href="official-links.html">Official Links</a>
-                    <!-- DROPDOWN MENU -->
-                    <ul class="dropdown">
-                        <li>
-                            <a href="https://binance.com" target="_blank">Buy crypto</a>
-                        </li>
-                        <li>
-                            <a href="https://opensea.io/" target="_blank">ETH NFT Marketplace</a>
-                        </li>
-                        <li>
-                            <a href="https://www.magiceden.io/" target="_blank">SOL NFT Marketplace</a>
-                        </li>
-                    </ul>
-                </li>
-            </div>
-        </ul>
-    </nav>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <script src=js/mobile.js></script>
+  </div>
+  <nav class="navbar">
+    <div class="logo">NFTGuide.com</div>
+    <ul class="nav-links">
+      <div class="menu">
+        <label class="switch">
+          <input onclick="toggleTheme()" for="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <script type="text/javascript" src="js/light-mode.js"></script>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sol.html">Solana</a></li>
+        <li><a href="eth.html">Ethereum</a></li>
+        <li class="services">
+          <a href="official-links.html">Official Links</a>
+          <ul class="dropdown">
+            <li>
+              <a href="https://binance.com" target="_blank">Buy crypto</a>
+            </li>
+            <li>
+              <a href="https://opensea.io/" target="_blank">ETH NFT Marketplace</a>
+            </li>
+            <li>
+              <a href="https://www.magiceden.io/" target="_blank">SOL NFT Marketplace</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </ul>
+  </nav>
   <nav class="mininavbar">
   <script type="text/javascript" src="js/exchange-rates.js"></script>
   <script>
@@ -198,5 +162,12 @@
   </main>
 
 </body>
-
+<footer>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="sol.html">Solana</a></li>
+    <li><a href="eth.html">Ethereum</a></li>     
+    <li><a href="official-links.html">Official Links</a></li>       
+</ul>
+</footer>
 </html>
