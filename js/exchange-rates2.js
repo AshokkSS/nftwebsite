@@ -1,3 +1,4 @@
+setInterval(getExchangeRates, 5000);
 function getExchangeRates(event, baseCurrency = "SOL") {
   var requestOptions = {
     method: "GET",
@@ -23,8 +24,8 @@ function renderCards(rates, baseCurrency) {
   var usdformatted = parseFloat(num).toFixed(2);
   var num2 = rates["GBP"];
   var gbpformatted = parseFloat(num2).toFixed(2);
-  console.log(usdformatted)
-  console.log(gbpformatted)
+  console.log(usdformatted);
+  console.log(gbpformatted);
   document.getElementById(
     "usd"
   ).innerHTML = `1 ${baseCurrency} \t=\t &#36 ${usdformatted}`;

@@ -19,8 +19,8 @@ html {
   }
   .smallimage {
     display: block;
-    width: 700px;
-    height: 400px;
+    width: auto;
+    height: auto;
     margin: 0 auto;
     transition: 0.5;
     position: sticky absolute;
@@ -60,7 +60,6 @@ html {
     list-style-type: circle;
     text-align: left;
     font-size: 18px;
-    padding: 5px;
     margin-left: 15px;
     color:white
   }
@@ -267,7 +266,16 @@ html {
     left: 250px;
     top: 2px;
   }
-  
+  .smallimage {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    transition: 0.5;
+    position: sticky absolute;
+    left: 250px;
+    top: 2px;
+  }
   
   
   .topnav {

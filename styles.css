@@ -1,7 +1,7 @@
 html {
   font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
   font-family: "Fjalla One", serif; /* this should be the rest of the output you got from Google fonts */
-  
+
   scroll-behavior: smooth;
   width: 100vw;
   height: 100vh;
@@ -19,8 +19,8 @@ img {
 }
 .smallimage {
   display: block;
-  width: 700px;
-  height: 400px;
+  width: auto;
+  height: auto;
   margin: 0 auto;
   transition: 0.5;
   position: sticky absolute;
@@ -38,14 +38,14 @@ h1 {
   color: white;
 }
 
-h2{
-  color:white;
-  font-size:30px
+h2 {
+  color: white;
+  font-size: 30px;
 }
 
-h3{
+h3 {
   color: grey;
-  font-size:20px;
+  font-size: 20px;
   font-style: italic;
 }
 
@@ -61,12 +61,11 @@ ul.a {
   list-style-type: circle;
   text-align: left;
   font-size: 18px;
-  padding: 5px;
   margin-left: 15px;
-  color:white
+  color: white;
 }
 
-figcaption{
+figcaption {
   text-align: center;
   font-weight: bold;
 }
@@ -99,14 +98,13 @@ body {
   color: black;
 }
 
-
 .nav-links a {
   width: 100%;
   color: black;
 }
 /* LOGO */
 .logo {
-  color:black;
+  color: black;
   font-size: 32px;
 }
 /* NAVBAR MENU */
@@ -240,214 +238,219 @@ nav ul {
 /* mobile formatting*/
 
 @media (max-width: 600px) {
-    /* Style the navigation menu */
-.navbar{
-  display: none;
-}
-.nav-links{
-  display: none;
-}
-.menu{
-  display: none;
-}
-.mininavbar{
-  padding: 2px;
-  
-}
-p{
-  font-size: 14px;
-}
-
-img {
-  display: block;
-  max-width: 95%;
-  width: 600px;
-  height: 250px;
-  margin: 0 auto;
-  transition: 0.5;
-  position: sticky absolute;
-  left: 250px;
-  top: 2px;
-}
-
-
-
-.topnav {
-  overflow: hidden;
-  z-index: 100;
-  background-color: white;
-  position: relative;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  z-index: 100;
-  display: none;
-  
-}
-
-/* Style navigation menu links */
-.topnav a {
-  z-index: 100;
-  color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: white;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 100;
-}
-
-/* Add a grey background color on mouse-over */
-
-
-/* Style the active link (or home/logo) */
-.active {
-  background-color: white;
-  color: white;
-  z-index: 100;
-}
-.switch {
-  position: sticky;
-  display: inline-block;
-  bottom: 8px;
-  width: 17px;
-  height: 17px;
-}
-
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  box-shadow: 0 0 5px black;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 13px;
-  width: 13px;
-  left: 2px;
-  bottom: 2px;
-  background-color: black;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #A9A9A9;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 2px black;
-}
-
-input:checked + .slider:before {
-  background-color: #D3D3D3;
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 17px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-}
-@media (min-width: 600px){
-  .topnav{
+  /* Style the navigation menu */
+  .navbar {
     display: none;
   }
-  .mylinks{
+  .nav-links {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .mininavbar {
+    padding: 2px;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  img {
+    display: block;
+    max-width: 95%;
+    width: 600px;
+    height: 250px;
+    margin: 0 auto;
+    transition: 0.5;
+    position: sticky absolute;
+    left: 250px;
+    top: 2px;
+  }
+
+  .smallimage {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    transition: 0.5;
+    position: sticky absolute;
+    left: 250px;
+    top: 2px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    z-index: 100;
+    background-color: white;
+    position: relative;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    z-index: 100;
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    z-index: 100;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+  }
+
+  /* Add a grey background color on mouse-over */
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: white;
+    color: white;
+    z-index: 100;
+  }
+  .switch {
+    position: sticky;
+    display: inline-block;
+    bottom: 8px;
+    width: 17px;
+    height: 17px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: black;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: #a9a9a9;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 2px black;
+  }
+
+  input:checked + .slider:before {
+    background-color: #d3d3d3;
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 17px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}
+@media (min-width: 600px) {
+  .topnav {
+    display: none;
+  }
+  .mylinks {
     display: none;
   }
   /* toggle */
-.switch {
-  position: sticky;
-  display: inline-block;
-  top: 5px;
-  width: 34px;
-  height: 34px;
-}
+  .switch {
+    position: sticky;
+    display: inline-block;
+    top: 5px;
+    width: 34px;
+    height: 34px;
+  }
 
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
 
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  box-shadow: 0 0 5px black;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: black;
-  box-shadow: 0 0 5px black;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    box-shadow: 0 0 5px black;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
 
-input:checked + .slider {
-  background-color: #A9A9A9;
-  box-shadow: 0 0 5px black;
-}
+  input:checked + .slider {
+    background-color: #a9a9a9;
+    box-shadow: 0 0 5px black;
+  }
 
-input:focus + .slider {
-  box-shadow: 0 0 5px black;
-}
+  input:focus + .slider {
+    box-shadow: 0 0 5px black;
+  }
 
-input:checked + .slider:before {
-  background-color: #D3D3D3;
-}
+  input:checked + .slider:before {
+    background-color: #d3d3d3;
+  }
 
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
 
-.slider.round:before {
-  border-radius: 50%;
-}
+  .slider.round:before {
+    border-radius: 50%;
+  }
 }
 
 /* text box styling*/
-
 
 .subtitle {
   font-size: 30px;
@@ -471,7 +474,7 @@ input:checked + .slider:before {
   color: white;
 }
 
-.footercontainer{
+.footercontainer {
   position: relative;
   width: 100%;
   height: 20px;
@@ -481,12 +484,12 @@ input:checked + .slider:before {
 }
 
 .smallcontainer {
-  position: sticky  ;
-  max-width:100%;
+  position: sticky;
+  max-width: 100%;
   width: 100%;
   text-align: center;
   align-items: center;
-  margin: 0 auto ;
+  margin: 0 auto;
   background-color: white;
 }
 
@@ -498,9 +501,9 @@ input:checked + .slider:before {
   font-size: 18px;
 }
 .largecontainer {
-  position: sticky ;
+  position: sticky;
   width: 95%;
-  
+
   width: 1400px;
   text-align: left;
   margin: 0 auto;
@@ -513,92 +516,71 @@ input:checked + .slider:before {
   margin: 0 auto;
 }
 
-.textinfo{
+.textinfo {
   color: white;
-  font-size:16px;
+  font-size: 16px;
   text-align: left;
 }
 
-footer{
-  background: #EEEEEE;
+footer {
+  background: #eeeeee;
   margin: 0 auto;
   height: 40px;
   padding-top: 20px;
   width: 100%;
   text-align: center;
 }
-footer ul{
-margin: 0px;
-padding:0;
+footer ul {
+  margin: 0px;
+  padding: 0;
 }
 footer li {
-/*  float: left;  */
+  /*  float: left;  */
   list-style-type: none;
   line-height: 9px;
   height: 11px;
   padding: 0px 10px;
-  display:inline;
+  display: inline;
 }
-footer li a{
+footer li a {
   text-decoration: none;
   color: black;
   font-size: 18px;
 }
 
-
-
 /* light mode toggle */
 .dark-mode {
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
   color: black;
-  
 }
-.dark-mode-navbar{
-  background-color:#A9A9A9;
+.dark-mode-navbar {
+  background-color: #a9a9a9;
 }
 
-.dark-mode-mininavbar{
-  background-color:#C0C0C0;
-  color: #A9A9A9;
+.dark-mode-mininavbar {
+  background-color: #c0c0c0;
+  color: #a9a9a9;
 }
 
 .logo-light {
-  color:	#D3D3D3;
+  color: #d3d3d3;
   font-size: 32px;
 }
 
-.nav-links-light a{
+.nav-links-light a {
   width: 100%;
-  color: 	#D3D3D3;
+  color: #d3d3d3;
 }
 
-.textinfo-light{
+.textinfo-light {
   color: black;
-  font-size:16px;
+  font-size: 16px;
   text-align: left;
 }
 
 .episode__number-light {
   color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* progress bar styling CURRENTLY REMOVED */
 
@@ -638,7 +620,7 @@ footer li a{
   background-color: #f1f1f1;
 }
 
-.progress-bar-text{
-  color:black;
+.progress-bar-text {
+  color: black;
   font-size: 20px;
 }
