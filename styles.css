@@ -141,7 +141,7 @@ body {
   position: absolute; /*WITH RESPECT TO PARENT*/
   display: none;
   border-radius: 8px;
-  top: 45px;
+  top: 46px;
   right: -5px;
 }
 .dropdown li + li {
@@ -149,7 +149,7 @@ body {
 }
 .dropdown li {
   padding: 0.5em 1em;
-  width: 8em;
+  width: 10em;
   text-align: center;
 }
 .dropdown li:hover {
@@ -548,7 +548,7 @@ footer li {
 footer li a {
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 /* light mode toggle */
