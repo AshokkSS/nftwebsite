@@ -1,6 +1,6 @@
 html {
   font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
-  font-family: "Fjalla One", serif; /* this should be the rest of the output you got from Google fonts */
+  font-family: "Orbitron", serif; /* this should be the rest of the output you got from Google fonts */
 
   scroll-behavior: smooth;
   width: 100vw;
@@ -20,7 +20,7 @@ img {
 .smallimage {
   display: block;
   width: auto;
-  height: auto;
+  height: 500px;
   margin: 0 auto;
   transition: 0.5;
   position: sticky absolute;
@@ -47,6 +47,11 @@ h3 {
   color: grey;
   font-size: 20px;
   font-style: italic;
+}
+
+h4 {
+  color: black;
+  font-size: 32px;
 }
 
 p,
@@ -93,7 +98,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  font-family: "Fjalla One", serif;
   background-color: white;
   color: black;
 }
@@ -177,7 +181,6 @@ nav ul {
   display: flex;
   align-items: center;
   padding: 10px;
-  font-family: "Fjalla One", serif;
   background-color: grey;
   color: black;
 }
