@@ -460,53 +460,11 @@ nav ul {
 
 /* text box styling*/
 
-.subtitle {
-  font-size: 30px;
-  text-align: left;
-  margin: 0;
-  padding: 20px;
-  color: white;
-}
 .infotitle {
   font-size: 60px;
   text-align: center;
   margin: 0;
   color: white;
-}
-
-.information {
-  font-size: 20px;
-  text-align: center;
-  margin: 0;
-  padding: 20px 0;
-  color: white;
-}
-
-.footercontainer {
-  position: relative;
-  width: 100%;
-  height: 20px;
-  background-color: white;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.smallcontainer {
-  position: sticky;
-  left: 260px;
-  width: 1000px;
-  text-align: left;
-  margin: 0;
-  border: 3px solid #666;
-}
-
-.largecontainer {
-  position: sticky;
-  width: 95%;
-
-  width: 1400px;
-  text-align: left;
-  margin: 0 auto;
 }
 
 .container {
