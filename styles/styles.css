@@ -1,7 +1,6 @@
 html {
-  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
-  font-family: "Orbitron", serif; /* this should be the rest of the output you got from Google fonts */
-
+  font-size: 10px;
+  font-family: "Orbitron", serif;
   scroll-behavior: smooth;
   width: 100vw;
   height: 100vh;
@@ -21,6 +20,17 @@ img {
   display: block;
   width: auto;
   height: 500px;
+  margin: 0 auto;
+  transition: 0.5;
+  position: sticky absolute;
+  left: 250px;
+  top: 2px;
+}
+
+.autoimage {
+  display: block;
+  width: auto;
+  height: auto;
   margin: 0 auto;
   transition: 0.5;
   position: sticky absolute;
@@ -138,7 +148,7 @@ body {
 .dropdown {
   background-color: white;
   padding: 1em 0;
-  position: absolute; /*WITH RESPECT TO PARENT*/
+  position: absolute;
   display: none;
   border-radius: 8px;
   top: 46px;
@@ -162,7 +172,7 @@ body {
 .info {
   float: left;
   width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 300px;
   background: #ccc;
   padding: 20px;
 }
@@ -314,8 +324,6 @@ nav ul {
     top: 0;
     z-index: 100;
   }
-
-  /* Add a grey background color on mouse-over */
 
   /* Style the active link (or home/logo) */
   .active {
